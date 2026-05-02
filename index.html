@@ -15,12 +15,18 @@
             color: #d4d4d4;
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
+            cursor: url('apple-cursor.svg') 12 12, auto;
+        }
+
+        a, button {
+            cursor: url('apple-cursor.svg') 12 12, pointer;
         }
 
         .site {
             max-width: 540px;
             margin: 0 auto;
             padding: 80px 24px 60px;
+            text-align: center;
         }
 
         .name {
@@ -36,10 +42,22 @@
         .sub {
             font-family: 'JetBrains Mono', monospace;
             font-size: 13px;
-            color: #666;
+            color: #888;
             letter-spacing: 2px;
             text-transform: lowercase;
-            margin-bottom: 64px;
+            margin-bottom: 40px;
+        }
+
+        .hero-img {
+            width: 420px;
+            max-width: 100%;
+            margin: 0 auto 48px;
+        }
+
+        .hero-img img {
+            width: 100%;
+            display: block;
+            mix-blend-mode: lighten;
         }
 
         .label {
@@ -49,6 +67,7 @@
             text-transform: uppercase;
             color: #555;
             margin-bottom: 20px;
+            text-align: left;
         }
 
         .track {
@@ -57,6 +76,7 @@
             gap: 16px;
             padding: 14px 0;
             border-bottom: 1px solid #1a1a1a;
+            text-align: left;
         }
 
         .track-art {
@@ -98,8 +118,9 @@
         }
 
         .bio {
-            margin-top: 64px;
-            margin-bottom: 64px;
+            margin-top: 48px;
+            margin-bottom: 48px;
+            text-align: left;
         }
 
         .bio p {
@@ -115,6 +136,7 @@
             text-transform: uppercase;
             color: #333;
             margin-bottom: 64px;
+            text-align: left;
         }
 
         .foot {
@@ -122,11 +144,13 @@
             font-size: 9px;
             color: #222;
             letter-spacing: 2px;
+            text-align: left;
         }
 
         @media (max-width: 480px) {
             .site { padding: 56px 20px 48px; }
             .name { font-size: 28px; letter-spacing: 5px; }
+            .hero-img { width: 320px; }
             .track-art { width: 56px; height: 56px; }
             .track-name { font-size: 14px; }
         }
@@ -137,7 +161,9 @@
 <div class="site">
 
     <h1 class="name">Sadie Haze</h1>
-    <p class="sub">music for the rotten ones</p>
+    <div class="hero-img">
+        <img src="rotten-ones.png" alt="Sadie Haze">
+    </div>
 
     <div class="label">Out now</div>
 
