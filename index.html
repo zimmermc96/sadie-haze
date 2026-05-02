@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadie Haze</title>
+    <meta name="description" content="Sadie Haze. Music for the rotten ones.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #0a0a0a;
+            color: #d4d4d4;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+        }
+
+        .site {
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 80px 24px 60px;
+        }
+
+        .name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .sub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+            margin-bottom: 64px;
+        }
+
+        .label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .track {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .track-art {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .track-info { flex: 1; }
+
+        .track-name {
+            font-weight: 600;
+            font-size: 15px;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+
+        .track-year {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .track-link {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 7px 14px;
+            border: 1px solid #333;
+            color: #888;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .track-link:hover {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .bio {
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+
+        .bio p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #999;
+        }
+
+        .soon {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 64px;
+        }
+
+        .foot {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            color: #222;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 480px) {
+            .site { padding: 56px 20px 48px; }
+            .name { font-size: 28px; letter-spacing: 5px; }
+            .track-art { width: 56px; height: 56px; }
+            .track-name { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="site">
+
+    <h1 class="name">Sadie Haze</h1>
+    <p class="sub">music for the rotten ones</p>
+
+    <div class="label">Out now</div>
+
+    <div class="track">
+        <img class="track-art" src="rotten-cover.jpg" alt="Rotten">
+        <div class="track-info">
+            <div class="track-name">Rotten</div>
+            <div class="track-year">2026</div>
+        </div>
+        <a href="#" class="track-link">Soon</a>
+    </div>
+
+    <div class="track">
+        <img class="track-art" src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02985646a9286ba1059d6e2e28" alt="Fumes">
+        <div class="track-info">
+            <div class="track-name">Fumes</div>
+            <div class="track-year">2026</div>
+        </div>
+        <a href="https://open.spotify.com/album/7z7WH7WPOdcvVqlkimk67j" class="track-link" target="_blank">Listen</a>
+    </div>
+
+    <div class="bio">
+        <div class="label">About</div>
+        <p>just some grunge girl on the internet writing songs she probably shouldn't. if this sounds like it's about you, it probably is. stay tuned for more.</p>
+    </div>
+
+    <div class="label">Connect</div>
+    <div class="soon">coming soon</div>
+
+    <div class="foot">2026</div>
+
+</div>
+
+</body>
+</html>
